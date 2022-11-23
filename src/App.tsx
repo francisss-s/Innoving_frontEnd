@@ -33,12 +33,12 @@ function App() {
         <Route path="/header" element={<Header/>}/>
         <Route path="/gerente" element={<Gerente/>}>
           <Route path='indicadores' element={<Componente />} />
-          <Route path='solicitudes_indicadores' element={<Componente />} />
+          <Route path='solicitudes_indicadores' element={<Peticiones />} />
         </Route>
         
         <Route path="/analista" element={<Analista/>}>
-          <Route path='indicadores' element={<Componente />} />
-          <Route path='metas' element={<Componente />} />
+          <Route path='indicadores' element={<Indicadores />} />
+          <Route path='metas' element={<Metas />} />
           <Route path='metricas' element={<Componente />} />
           <Route path='evidencias' element={<Componente />} />
           <Route path='proveedores' element={<Componente />} />

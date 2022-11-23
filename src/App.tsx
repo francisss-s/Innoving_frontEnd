@@ -18,7 +18,7 @@ import TablaPROV from './components/Gestion_usuario/tablaProv';
 import FormularioEdit from './components/Gestion_usuario/formuEditInnoving';
 import TestTabla from './components/Gestion_usuario/testTabla';
 
-
+import Indicadores from './pages/Configuración_Proyecto/Indicadores';
 
 function App() {
   return (
@@ -41,6 +41,8 @@ function App() {
           <Route path='proveedores' element={<Componente />} />
         </Route>
 
+        
+
         <Route path="/administrador" element={<Administrador/>} >
           <Route path='usuarios_innoving' element={<TestTabla/>} />
           <Route path='usuarios_proveedores' element={<TablaPROV />} />
@@ -56,6 +58,13 @@ function App() {
         <Route path="/formularioEdit" element={<FormularioEdit/>} />
         <Route path="/editarUser/:id" element={<FormularioEdit/>} />
         </Routes>
+
+        
+       
+       
+        
+
+
     </Router>
   );
 }
